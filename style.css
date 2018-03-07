@@ -1,0 +1,148 @@
+.wrapper {
+	width: 100%;
+	position: relative;
+	text-align: left;
+	background-color: GhostWhite;
+}
+
+header {
+	clear: both;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0px;
+	position: relative;
+}
+
+nav {
+	padding: 10px;
+	width: 50%;
+	float: right;
+	background-color: gray;
+}
+
+nav ul#menu {
+	float: right;
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+nav ul#menu li {
+	display: block;
+	float: left;
+	text-align: center;
+	position: relative;
+	padding: 5px;
+}
+
+footer {
+	clear: both;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0px;
+	text-align: center;
+}
+
+#footContainer {
+	width: 100%;
+	border-top: 2px solid black;
+}
+
+img {
+	width: 100%;
+	height: auto;
+	border: 0px;
+}
+#footContainer img {
+	width: 50px;
+	margin: 0px 10px 15px 0px;
+	vertical-align: middle;
+
+}
+
+#headContainer {
+	width: 100%;
+	background-color: LightGrey;
+	border-bottom: 2px solid black;
+}
+
+#topLogo {
+	padding: 10px;
+	width: 45%;
+	float: left;
+	background-color: gray;
+}
+
+#mainContainer {
+	width: 100%;
+	margin: 0px;
+}
+
+#mainContainer img {
+	width: 150px;
+	margin: 0px 10px 15px 0px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+#mainContent {
+	clear: both;
+	max-width: 1450px;
+	position: relative;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: MintCream;
+}
+
+
+
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+/*  GRID OF SIX  */
+.span_6_of_6 {
+	width: 100%;
+}
+
+.span_5_of_6 {
+  	width: 83.06%;
+}
+
+.span_4_of_6 {
+  	width: 66.13%;
+}
+
+.span_3_of_6 {
+  	width: 49.2%;
+}
+
+.span_2_of_6 {
+  	width: 32.26%;
+}
+
+.span_1_of_6 {
+  	width: 15.33%;
+}
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_1_of_6, .span_2_of_6, .span_3_of_6, .span_4_of_6, .span_5_of_6, .span_6_of_6 { width: 100%; }
+}
