@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>photography</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+     </head>
+  <body>
+    
+    <div class="wrapper">
+      <div id="headContainer">
+        <header>
+          <div class="section group">
+            <div class="col span_2_of_6">
+              <div id="topLogo">
+                logo
+              </div>
+            </div>
+            <div class="col span_4_of_6">
+              <nav>
+                <ul id="menu">
+                  <li>
+                    <a href="index.html">home</a>
+                  </li>
+                  <li>
+                    <a href="/">web design</a>
+                  </li>
+                  <li>
+                    <a href="editorial.html">editorial</a>
+                  </li>
+                  <li>
+                    <a href="polaroid.html">art</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </header>
+      </div>
+      <div id="mainContainer">
+        <div id="mainContent">
+          <div class="section group">
+            <div class="col span_3_of_6">
+              <h1>photo/collage!</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero.</p>
+            </div>
+            <div class="col span_3_of_6">
+              
+              <img name="slide">
+
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div id="footContainer">
+        <footer>
+          <div class="section group">
+            <div class="col span_6_of_6">
+              <a href="https://www.linkedin.com/in/scottnyerges/" target="_blank">
+                <img src="linkedin.png">
+              </a>
+              <a href="http://www.thepictaram.club/instagram/scott_nyerges" target="_blank">
+                <img src="instagram.png">
+              </a>
+              <a href="https://github.com/scottnyerges" target="_blank">
+                <img src="github.png">
+              </a>
+              <a href="mailto:scottnyerges@live.com" target="_blank">
+                <img src="email.png">
+              </a>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+<script>
+var i = 0;      // Start Point
+var images = [];  // Images Array
+var time = 3000;  // Time Between Switch
+   
+// Image List
+images[0] = "portfolio_images/collage1.jpg";
+images[1] = "portfolio_images/collage2.jpg";
+images[2] = "portfolio_images/collage3.jpg";
+images[3] = "portfolio_images/collage4.jpg";
+images[4] = "portfolio_images/collage5.jpg";
+images[5] = "portfolio_images/polaroid1.jpg";
+images[6] = "portfolio_images/polaroid2.jpg";
+images[7] = "portfolio_images/polaroid3.jpg";
+images[8] = "portfolio_images/poalroid4.jpg";
+images[9] = "portfolio_images/polaroid5.jpg";
+
+// Change Image
+function changeImg(){
+  document.slide.src = images[i];
+
+  // Check If Index Is Under Max
+  if(i < images.length - 1){
+    // Add 1 to Index
+    i++; 
+  } else { 
+    // Reset Back To O
+    i = 0;
+  }
+
+  // Run function every x seconds
+  setTimeout("changeImg()", time);
+}
+
+// Run function when page loads
+window.onload=changeImg;
+</script>
+
+  </body>
+</html>
+
+
+

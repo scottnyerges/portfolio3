@@ -50,6 +50,7 @@ footer {
 
 img {
 	width: 100%;
+	max-width: 350px;
 	height: auto;
 	border: 0px;
 }
@@ -78,11 +79,19 @@ img {
 	margin: 0px;
 }
 
-#mainContainer img {
-	width: 150px;
+/*#mainContainPix {
+	width: 215px;
 	margin: 0px 10px 15px 0px;
 	vertical-align: middle;
 	text-align: center;
+}*/
+
+#indexPic {
+	width: 350px;
+	height: auto;
+/*		margin: 0px 10px 15px 0px;
+	vertical-align: middle;
+	text-align: center;*/
 }
 
 #mainContent {
@@ -93,6 +102,8 @@ img {
 	padding: 20px;
 	background-color: MintCream;
 }
+
+/*SLIDESHOW*/
 
 
 
@@ -145,4 +156,15 @@ img {
 @media only screen and (max-width: 480px) {
 	.col {  margin: 1% 0 1% 0%; }
 	.span_1_of_6, .span_2_of_6, .span_3_of_6, .span_4_of_6, .span_5_of_6, .span_6_of_6 { width: 100%; }
+	#indexPic {
+	width: 300px;
+	height: auto;
+	vertical-align: middle;
+	text-align: center;
 }
+}
+
+
+
+
+
