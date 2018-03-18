@@ -3,7 +3,10 @@
 	position: relative;
 	text-align: left;
 	background-color: GhostWhite;
+	font-family: 'News Cycle', sans-serif;
 }
+
+
 
 header {
 	clear: both;
@@ -13,18 +16,25 @@ header {
 	position: relative;
 }
 
-nav {
-	padding: 10px;
-	width: 50%;
-	float: right;
-	background-color: gray;
+p {
+	font-family: 'Roboto', sans-serif;
 }
+
+nav {
+	padding: 0px;
+	width: 100%;
+	float: right;
+}
+
+
 
 nav ul#menu {
 	float: right;
 	list-style: none;
 	padding: 0px;
 	margin: 0px;
+
+
 }
 
 nav ul#menu li {
@@ -50,9 +60,10 @@ footer {
 
 img {
 	width: 100%;
-	max-width: 350px;
+	max-width: 400px;
 	height: auto;
 	border: 0px;
+	text-align: center;
 }
 #footContainer img {
 	width: 50px;
@@ -63,49 +74,51 @@ img {
 
 #headContainer {
 	width: 100%;
-	background-color: LightGrey;
 	border-bottom: 2px solid black;
 }
 
 #topLogo {
-	padding: 10px;
-	width: 45%;
+	padding: 0px;
+	width: 100%;
 	float: left;
-	background-color: gray;
 }
+
+#hi {
+	margin-top: 5px;
+	margin-bottom: -50px;
+	font-size: 200px;
+}
+
+#section {
+	font-size: 24px;
+}
+
+h1 {
+	font-size: 100px;
+	margin-bottom: -10px;
+	margin-top: -25px;
+}
+
+h2 {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 15px;
+}
+
 
 #mainContainer {
 	width: 100%;
 	margin: 0px;
 }
 
-/*#mainContainPix {
-	width: 215px;
-	margin: 0px 10px 15px 0px;
-	vertical-align: middle;
-	text-align: center;
-}*/
-
-#indexPic {
-	width: 350px;
-	height: auto;
-/*		margin: 0px 10px 15px 0px;
-	vertical-align: middle;
-	text-align: center;*/
-}
 
 #mainContent {
 	clear: both;
-	max-width: 1450px;
+	max-width: 1200 px;
 	position: relative;
 	margin: 0 auto;
-	padding: 20px;
-	background-color: MintCream;
+	padding: 10px;
 }
-
-/*SLIDESHOW*/
-
-
 
 /*  SECTIONS  */
 .section {
@@ -114,6 +127,10 @@ img {
 	margin: 0px;
 }
 
+
+
+
+
 /*  COLUMN SETUP  */
 .col {
 	display: block;
@@ -121,6 +138,19 @@ img {
 	margin: 1% 0 1% 1.6%;
 }
 .col:first-child { margin-left: 0; }
+
+.push {
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 480px)
+{
+		
+	.push {
+	    display: none;
+	}
+	
+}
 
 /*  GROUPING  */
 .group:before,
@@ -156,11 +186,13 @@ img {
 @media only screen and (max-width: 480px) {
 	.col {  margin: 1% 0 1% 0%; }
 	.span_1_of_6, .span_2_of_6, .span_3_of_6, .span_4_of_6, .span_5_of_6, .span_6_of_6 { width: 100%; }
-	#indexPic {
-	width: 300px;
-	height: auto;
-	vertical-align: middle;
-	text-align: center;
+	#hi {
+	margin-top: -60px;
+	margin-bottom: -45px;
+	font-size: 175px;
+	}
+	h1{margin-bottom: -15px;}
+
 }
 }
 
